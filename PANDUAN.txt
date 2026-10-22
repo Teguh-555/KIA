@@ -1,0 +1,32 @@
+UNTUK KIA - Website Romantis
+===========================
+
+STRUKTUR:
+index.html
+style.css
+script.js
+assets/images/foto1.jpg sampai foto6.jpg (opsional, masukkan sendiri)
+assets/music/lagu-romantis.mp3 (opsional, masukkan sendiri)
+
+CARA PAKAI:
+1. Ekstrak ZIP ini.
+2. Masukkan enam foto dengan nama foto1.jpg hingga foto6.jpg ke folder assets/images.
+   Anda boleh mengisi hanya sebagian; slot lainnya memakai placeholder.
+   Bila foto Anda PNG, ubah ekstensi pada src dan data-src di index.html.
+3. Masukkan MP3 yang memiliki izin penggunaan ke assets/music/lagu-romantis.mp3.
+4. Klik dua kali index.html untuk membuka di browser.
+   Agar bisa menguji seperti website sungguhan, gunakan local server:
+   python -m http.server 8000
+   lalu buka http://localhost:8000.
+5. Unggah ISI FOLDER 'untuk-kia' (bukan folder pembungkus ganda) ke Netlify Drop
+   https://app.netlify.com/drop atau deploy lewat dashboard Netlify.
+   Penting: sertakan foto dan MP3 dalam folder yang sama pada deploy.
+6. Untuk mengedit surat, ubah object LETTERS di awal script.js.
+   Untuk judul/tombol/caption, ubah index.html.
+   Untuk warna, ubah CSS custom properties di bagian :root pada style.css.
+
+CATATAN:
+- Font Google membutuhkan koneksi internet, tetapi fallback font tetap tersedia.
+- Musik dimulai saat tombol dibuka (jika file MP3 ada dan browser mengizinkan).
+- Website tidak memiliki backend atau memerlukan npm.
+- Jangan mengunggah foto pribadi tanpa persetujuan orang terkait bila tautan dibagikan luas.

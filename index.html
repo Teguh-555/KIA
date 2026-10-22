@@ -1,0 +1,168 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fff0f3">
+  <meta name="description" content="Sebuah surat kecil yang dibuat khusus untuk Kia.">
+  <title>Untuk Kia ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span class="glow glow-a"></span><span class="glow glow-b"></span><span class="glow glow-c"></span></div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+  <div id="heartBurst" class="heart-burst" aria-hidden="true"></div>
+  <div id="readingProgress" class="reading-progress" role="progressbar" aria-label="Kemajuan membaca" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Kembali ke awal">a little letter <span>♡</span></a>
+    <nav aria-label="Navigasi bagian surat">
+      <a href="#apology">Surat</a><a href="#healing">Doa</a><a href="#memories">Kenangan</a><a href="#ending">Penutup</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="hero-spark hero-spark-left" aria-hidden="true">✦</div><div class="hero-spark hero-spark-right" aria-hidden="true">✧</div>
+      <p class="eyebrow reveal">A little letter for Kia</p>
+      <h1 class="reveal">Hai, <em>Kia</em> <span class="flower">🌷</span></h1>
+      <p class="hero-sub reveal">Ada sesuatu yang ingin aku sampaikan ke kamu...</p>
+      <div class="envelope-scene reveal" id="envelopeScene" aria-hidden="true">
+        <div class="envelope"><div class="envelope-back"></div><div class="envelope-letter"><span>for Kia ♡</span></div><div class="envelope-flap"></div><div class="envelope-front"></div><div class="seal">♥</div></div>
+      </div>
+      <p class="intro-copy reveal">Aku membuat ini khusus buat kamu. Semoga kamu mau membacanya sampai selesai. ❤️</p>
+      <button type="button" id="openLetter" class="btn btn-primary reveal">Buka Surat dari Aku 💌 <span aria-hidden="true">↗</span></button>
+      <p class="microcopy">Pelan-pelan aja bacanya, Kia.</p>
+    </section>
+
+    <section id="apology" class="section section-letter">
+      <div class="section-inner narrow">
+        <p class="eyebrow reveal">01 / Dari hatiku</p>
+        <h2 class="section-title reveal">Maafin Aku Ya, <em>Kia</em> 🥺❤️</h2>
+        <p class="section-lead reveal">Ada hal-hal yang lebih mudah aku tuliskan daripada aku ucapkan.</p>
+        <article class="paper letter-paper reveal">
+          <div class="paper-top"><span>to: Kia</span><span>with love ♡</span></div>
+          <div id="apologyText" class="letter-text" aria-label="Surat permintaan maaf untuk Kia"></div>
+          <div id="typewriterCursor" class="typewriter-cursor" aria-hidden="true"></div>
+          <p class="signature">— dari aku, yang mau terus belajar ♡</p>
+        </article>
+        <div class="center reveal"><a class="btn btn-secondary" href="#healing">Ada Pesan Lagi Buat Kia 🌷 <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section id="healing" class="section section-healing">
+      <div class="section-inner narrow">
+        <p class="eyebrow reveal">02 / Doa kecil</p>
+        <div class="bloom-scene reveal" aria-hidden="true"><div class="bloom-halo"></div><span class="bloom bloom-one">🌷</span><span class="bloom bloom-two">🌸</span><span class="bloom bloom-three">🌼</span><span class="bloom bloom-four">🌷</span></div>
+        <h2 class="section-title reveal">Get Well Soon, <em>Kia</em> 🌸</h2>
+        <p class="section-lead reveal">Cepat sembuh ya, Kia. Aku pengen lihat kamu sehat dan ceria lagi.</p>
+        <article class="glass-card reveal">
+          <div class="letter-text" id="healingText"></div>
+          <div class="hug-tag">Sending a warm hug to Kia 🤗</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="memories" class="section section-memories">
+      <div class="section-inner wide">
+        <p class="eyebrow reveal">03 / Potongan cerita kita</p>
+        <h2 class="section-title reveal">Little Memories With <em>Kia</em> 📸</h2>
+        <p class="section-lead reveal">Momen-momen kecil yang selalu punya tempat sendiri.</p>
+
+        <div class="photo-grid" id="photoGrid">
+
+          <button class="polaroid reveal" type="button" data-src="./foto1.jpg" data-caption="Senyum favoritku ❤️" aria-label="Perbesar foto 1">
+            <div class="photo-frame">
+              <img src="./foto1.jpg" alt="Kenangan pertama bersama Kia" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span>♡</span><small>our little moment 01</small></div>
+            </div>
+            <span class="photo-caption">Senyum favoritku ❤️</span>
+          </button>
+
+          <button class="polaroid reveal" type="button" data-src="./foto2.jpg" data-caption="Salah satu kenangan indah kita" aria-label="Perbesar foto 2">
+            <div class="photo-frame">
+              <img src="./foto2.jpg" alt="Kenangan kedua bersama Kia" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span>✿</span><small>our little moment 02</small></div>
+            </div>
+            <span class="photo-caption">Salah satu kenangan indah kita</span>
+          </button>
+
+          <button class="polaroid reveal" type="button" data-src="./foto3.jpg" data-caption="Momen yang nggak mau aku lupain" aria-label="Perbesar foto 3">
+            <div class="photo-frame">
+              <img src="./foto3.jpg" alt="Kenangan ketiga bersama Kia" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span>♡</span><small>our little moment 03</small></div>
+            </div>
+            <span class="photo-caption">Momen yang nggak mau aku lupain</span>
+          </button>
+
+          <button class="polaroid reveal" type="button" data-src="./foto4.jpg" data-caption="Kia yang selalu bikin aku tersenyum" aria-label="Perbesar foto 4">
+            <div class="photo-frame">
+              <img src="./foto4.jpg" alt="Kenangan keempat bersama Kia" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span>✿</span><small>our little moment 04</small></div>
+            </div>
+            <span class="photo-caption">Kia yang selalu bikin aku tersenyum</span>
+          </button>
+
+          <button class="polaroid reveal" type="button" data-src="./foto5.jpg" data-caption="Bersyukur bisa kenal kamu" aria-label="Perbesar foto 5">
+            <div class="photo-frame">
+              <img src="./foto5.jpg" alt="Kenangan kelima bersama Kia" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span>♡</span><small>our little moment 05</small></div>
+            </div>
+            <span class="photo-caption">Bersyukur bisa kenal kamu</span>
+          </button>
+
+          <button class="polaroid reveal" type="button" data-src="./foto6.jpg" data-caption="Semoga masih banyak kenangan indah berikutnya" aria-label="Perbesar foto 6">
+            <div class="photo-frame">
+              <img src="./foto6.jpg" alt="Kenangan keenam bersama Kia" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span>✿</span><small>our little moment 06</small></div>
+            </div>
+            <span class="photo-caption">Semoga masih banyak kenangan indah berikutnya</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="surprise" class="section section-surprise">
+      <div class="section-inner narrow">
+        <p class="eyebrow reveal">04 / Hal kecil untukmu</p>
+        <h2 class="section-title reveal">Sedikit Sesuatu Buat <em>Kia</em> 💗</h2>
+        <p class="section-lead reveal">Kalau hari ini berat, semoga ini bisa bikin Kia tersenyum sebentar.</p>
+        <div class="interaction-grid reveal">
+          <button type="button" class="interaction-card" id="hugButton"><span class="interaction-icon">🤗</span><span>Peluk Virtual</span><small>Peluk dari jauh</small></button>
+          <button type="button" class="interaction-card" id="cheerButton"><span class="interaction-icon">🌷</span><span>Semangat, Kia</span><small>Pesan kecil hari ini</small></button>
+          <button type="button" class="interaction-card" id="giftButton"><span class="interaction-icon gift-icon" id="giftIcon">🎁</span><span>Surprise Kecil</span><small>Ada sesuatu nih</small></button>
+        </div>
+        <div class="message-holder" aria-live="polite" aria-atomic="true"><p id="interactionMessage">Dibuat dengan hati, untuk Kia. ♡</p></div>
+      </div>
+    </section>
+
+    <section id="ending" class="section section-ending">
+      <div class="section-inner narrow">
+        <p class="eyebrow reveal">05 / Sebelum surat ini selesai</p>
+        <h2 class="section-title reveal">One Last Thing, <em>Kia...</em> 💌</h2>
+        <article class="paper last-paper reveal"><div class="paper-top"><span>one last letter</span><span>♡</span></div><div class="letter-text" id="endingText"></div><div class="ending-heart" aria-hidden="true">♡</div></article>
+        <div class="center reveal"><button id="sendLove" class="btn btn-primary" type="button">Kirim Banyak Cinta untuk Kia 💗</button><p id="endingMessage" class="ending-message" aria-live="polite"></p><p class="made-with-love">Made with love, especially for Kia ❤️</p></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-player" aria-label="Kontrol musik romantis">
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Putar musik" aria-pressed="false">♫</button>
+    <div class="music-details"><span class="music-title">A song for Kia ♡</span><span class="music-status" id="musicStatus">Musik belum dimulai</span></div>
+    <label class="sr-only" for="musicVolume">Volume musik</label>
+    <input type="range" min="0" max="100" value="35" id="musicVolume" aria-label="Volume musik">
+  </div>
+
+  <button id="backToTop" type="button" aria-label="Kembali ke atas" title="Kembali ke atas">↑</button>
+
+  <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Foto kenangan Kia" aria-hidden="true" hidden>
+    <button id="closeModal" class="modal-close" type="button" aria-label="Tutup foto">×</button>
+    <div class="modal-content"><img id="modalImage" alt="Foto kenangan Kia yang diperbesar"><div id="modalPlaceholder" class="modal-placeholder" hidden>♡<span>Foto kenangan belum ditambahkan</span></div><p id="modalCaption"></p></div>
+  </div>
+
+  <audio id="backgroundMusic" src="assets/music/lagu-romantis.mp3.mp3" preload="none" loop></audio>
+</body>
+</html>
